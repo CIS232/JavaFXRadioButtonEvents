@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.65" fx:controller="edu.cis232.RadioEventController">
+   <children>
+      <RadioButton layoutX="14.0" layoutY="25.0" mnemonicParsing="false" onAction="#radioEventListener" text="Orange">
+         <toggleGroup>
+            <ToggleGroup fx:id="color" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="14.0" layoutY="57.0" mnemonicParsing="false" onAction="#radioEventListener" text="Black" toggleGroup="$color" />
+      <RadioButton layoutX="14.0" layoutY="88.0" mnemonicParsing="false" onAction="#radioEventListener" text="Yellow" toggleGroup="$color" />
+      <Circle fx:id="circle" fill="WHITE" layoutX="257.0" layoutY="166.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label fx:id="lblHint" layoutX="209.0" layoutY="158.0" text="Choose a color!" />
+   </children>
+</AnchorPane>
